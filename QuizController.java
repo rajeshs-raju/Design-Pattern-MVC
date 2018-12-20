@@ -70,7 +70,6 @@ public class QuizController
             
         }
         view.printGameOver();
-        view.printScoreOfPlayer(model.getPlayerName(),model.getPlayerScore(),model.getPlayerAttendQuestions(),model.getPlayerTotalQuestions());
-        
+        view.printScoreOfPlayer(model);
     }
 }
