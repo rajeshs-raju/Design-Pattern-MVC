@@ -17,10 +17,10 @@ public class QuizView
     }
 
 
-    public void printScoreOfPlayer(String name,int score,int noaq,int noq ) 
+   public void printScoreOfPlayer(QuizModel model)
     {
-        System.out.println(name + " has reached " + score + " points.");
-        System.out.println("Total no. of Questions "+noq+" Correctly answered "+noaq);
+        System.out.println(model.getPlayerName() + " has reached " + model.getPlayerScore() + " points.");
+        System.out.println("Total no. of Questions "+model.getPlayerTotalQuestions()+" Correctly answered "+model.getPlayerAttendQuestions());
     }
 
 
