@@ -17,16 +17,19 @@ public abstract class Question
 				temp=new YNQuestion(question,answers,correctAnswerLetter,1,Levels.EASY);
 			else
 				temp=new MQuestion(question,answers,correctAnswerLetter,1,Levels.EASY);
+			break;
 		case MEDIUM:
 			if(answers.length==2)
 				temp=new YNQuestion(question,answers,correctAnswerLetter,2,Levels.MEDIUM);
 			else
 				temp=new MQuestion(question,answers,correctAnswerLetter,2,Levels.MEDIUM);
+			break;
 		case HARD:
 			if(answers.length==2)
 				temp=new YNQuestion(question,answers,correctAnswerLetter,4,Levels.HARD);
 			else
 				temp=new MQuestion(question,answers,correctAnswerLetter,4,Levels.HARD);
+			break;
 			
 		}
 		return temp;
